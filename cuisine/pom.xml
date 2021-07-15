@@ -8,7 +8,7 @@
 		<version>2.5.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.recettes</groupId>
+	<groupId>com.example.recette</groupId>
 	<artifactId>cuisine</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cuisine</name>

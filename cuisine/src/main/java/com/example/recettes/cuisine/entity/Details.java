@@ -10,14 +10,14 @@ public class Details {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String detailsrecette;
+    private String details;
 
     public Details() {
     }
 
-    public Details(Long id, String detailsrecette) {
+    public Details(Long id, String details) {
         this.id = id;
-        this.detailsrecette = detailsrecette;
+        this.details = details;
     }
 
     public Long getId() {
@@ -28,19 +28,19 @@ public class Details {
         this.id = id;
     }
 
-    public String getDetailsrecette() {
-        return detailsrecette;
+    public String getDetails() {
+        return details;
     }
 
-    public void setDetailsrecette(String detailsrecette) {
-        this.detailsrecette = detailsrecette;
+    public void setDetails(String details) {
+        this.details = details;
     }
 
     @Override
     public String toString() {
         return "Details{" +
                 "id=" + id +
-                ", detailsrecette='" + detailsrecette + '\'' +
+                ", details='" + details + '\'' +
                 '}';
     }
 }

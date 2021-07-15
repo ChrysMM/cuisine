@@ -1,7 +1,6 @@
 package com.example.recettes.cuisine.service;
 
 import com.example.recettes.cuisine.entity.Categorie;
-import com.example.recettes.cuisine.entity.Recettes;
 import com.example.recettes.cuisine.repository.CategorieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

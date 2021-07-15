@@ -7,17 +7,17 @@ import javax.persistence.Id;
 
 @Entity
 
-public class Recettes {
+public class Recette {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
 private String nom;
 
 
-    public Recettes() {
+    public Recette() {
     }
 
-    public Recettes(Long id, String nom, String categorie) {
+    public Recette(Long id, String nom, String categorie) {
         this.id = id;
         this.nom = nom;
 
@@ -40,13 +40,11 @@ private String nom;
     }
 
 
-
     @Override
     public String toString() {
-        return "Recettes{" +
+        return "Recette{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
-
                 '}';
     }
 }

@@ -11,14 +11,14 @@ public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nomingred;
+    private String nom;
 
     public Ingredient() {
     }
 
-    public Ingredient(Long id, String nomingred) {
+    public Ingredient(Long id, String nom) {
         this.id = id;
-        this.nomingred = nomingred;
+        this.nom = nom;
     }
 
     public Long getId() {
@@ -29,19 +29,19 @@ public class Ingredient {
         this.id = id;
     }
 
-    public String getNomingred() {
-        return nomingred;
+    public String getNom() {
+        return nom;
     }
 
-    public void setNomingred(String nomingred) {
-        this.nomingred = nomingred;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     @Override
     public String toString() {
         return "Ingredient{" +
                 "id=" + id +
-                ", nomingred='" + nomingred + '\'' +
+                ", nom='" + nom + '\'' +
                 '}';
     }
 }

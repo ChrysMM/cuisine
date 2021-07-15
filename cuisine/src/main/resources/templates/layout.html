@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hello Thymeleaf!</title>
+    <style>
+        form {
+            width:250px;
+        }
+        form > div {
+            display:flex;
+            justify-content: space-between;
+            margin: 3px;
+        }
+        #btn-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Ajouter une recette</h1>
+
+<form method="POST" action="addRecette">
+    <div>
+        <label for="recette">Recette</label>
+        <input type="text" name="recette" id="recette">
+    </div>
+    <div>
+        <label for="categorie-select">Catégorie</label>
+        <select name="categorie" id="categorie-select">
+            <option value="">--Merci de choisir une catégorie--</option>
+            <option valeur="entree">Entrée</option>
+            <option valeur="plat">Plat</option>
+            <option valeur="en">Dessert</option>
+
+        </select>
+    </div>
+    <div>
+        <label for="details">Details Recette</label>
+        <textarea type="text" name="details" id="details"
+               rows="5" cols="33">
+        Details...
+        </textarea>
+    </div>
+    <div>
+        <label for="ingredient">Ingredient</label>
+        <input type="text" name="ingredient" id="ingredient">
+
+    </div>
+    <div id="btn-container"><input type="submit" value="Créer"></div>
+
+</form>
+
+</body>
+</html>
